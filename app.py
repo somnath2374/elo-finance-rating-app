@@ -148,7 +148,7 @@ def main():
     stock_names = st.text_area("Enter stock names (comma separated)", "Infosys, Reliance, Apple, Tesla")
 
     # Time frame selection
-    time_frame = st.selectbox("Select Time Frame", ["1d", "1wk", "1mo", "6mo", "1y", "5y"], index=4)  
+    time_frame = st.selectbox("Select Time Frame", ["1wk", "1mo", "6mo", "1y", "5y"], index=4)  
 
     if st.button("Generate Rankings"):
         stock_list = [name.strip() for name in stock_names.split(",")]
