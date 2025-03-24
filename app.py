@@ -145,7 +145,7 @@ def compute_technical_elo(tickers):
 def main():
     st.title("📈 Stock Elo Ranking System")
     
-    stock_names = st.text_area("Enter stock names (comma separated)", "Infosys, Reliance, Apple, Tesla")
+    stock_names = st.text_area("Enter stock names (comma separated)", "Infosys, Reliance.NS, Apple, Tesla , Tata")
 
     # Time frame selection
     time_frame = st.selectbox("Select Time Frame", ["1wk", "1mo", "6mo", "1y", "5y"], index=4)  
